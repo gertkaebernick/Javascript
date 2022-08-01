@@ -9,21 +9,26 @@
 </head>
 <body>
     <header>
-        Título
+        <h1>Vamos contar</h1>
     </head>
     <section>
-        <p><label for="inicio">Inicio</label>
-            <input type="number" name="inicio" id="inicio" required>
-        </p>
-        <p><label for="fim">Fim</label>
-            <input type="number" name="fim" id="fim" required>
-        </p>
-        <p><label for="passo">Passo</label>
-            <input type="number" name="passo" id="passo" required>
-        </p>
-        <p>
-            <input type="button" value="calcular" onclick="calcular()">
-        </p>
+        <div id="dados">
+            <p><label for="inicio">Inicio:</label>
+                <input type="number" name="inicio" id="txti" required>
+            </p>
+            <p><label for="fim">Fim:</label>
+                <input type="number" name="fim" id="txtf" required>
+            </p>
+            <p><label for="passo">Passo</label>
+                <input type="number" name="passo" id="txtp" required>
+            </p>
+            <p>
+                <input type="button" value="Contar" onclick="contar()">
+            </p>
+        </div>
+        <div id="res">
+            Preparando contagem...
+        </div>
     </section>
     <footer>
         <p>&copy; GertKaebernick</p>
