@@ -1,11 +1,30 @@
-function tabuada() {
-    let num = document.getElementById('txtn')
-    let tab = document.getElementById('seltab')
-    if(num.value < 1 || num.value > 100){
-        window.alert('Por favor digite um número!')
+let num = document.querySelector('input#fnum')
+let lista = document.querySelector('select#flista')
+let res = document.querySelector('div#res')
+let valores = []
+
+function isNumero(n) {
+    if(Number(n) >= 1 && Number(n) <= 100){
+        return true
     }else {
-        let n = []
-        n.push.Number(num.value) 
-        document.getElementById('seltab').innerText = "oi"
-        }
+        return false
     }
+}
+
+function inLista(n, 1) {
+    if(l.indexOf(Number(n)) != -1){
+        return true
+    }else {
+        return false
+    }
+}
+
+
+
+function adicionar() {
+    if(isNumero(num.value) && !inLista(num.value, valores)){
+        window.alert('Tudo Ok')
+    } else {
+        window.alert('Valor invalido!')
+    }
+}
